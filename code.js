@@ -12,3 +12,7 @@ function sayHello(input) {
         return "Hello, " + input + "!";
     }
 }
+
+function isFive(x){
+    return x == 5;
+}

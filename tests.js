@@ -17,26 +17,44 @@ describe('helloWorld', function() {
 describe('sayHello', function() {
     it('should be a defined function', function(){
         expect(typeof sayHello).toBe('function');
-    })
+    });
     it('should return a string when called', function() {
         expect(typeof sayHello()).toBe('string');
-    })
+    });
     it('should return the string "Hello, Jane!" when executed', function () {
         expect(sayHello("Jane")).toBe("Hello, Jane!");
-    })
-    it('should return the string "Hello, Alex!" to when executed', function () {
+    });
+    it('should return the string "Hello, Alex!" to when executed', function() {
         expect(sayHello("Alex")).toBe("Hello, Alex!");
-    })
+    });
     it('should return a string "Hello, Pat!" when executed', function() {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
-    })
+    });
     it('should return the string "Hello, World! when executed', function() {
         expect(sayHello()).toBe("Hello, World!");
-    })
-    it('should return the string "Hello, World!" when executed', function () {
+    });
+    it('should return the string "Hello, World!" when executed', function() {
         expect(sayHello(true)).toBe("Hello, World!");
-    })
-    it('should return the string "Hello, World!" when executed', function () {
+    });
+    it('should return the string "Hello, World!" when executed', function() {
         expect(sayHello(false)).toBe("Hello, World!");
+    })
+});
+
+describe('isFive', function() {
+    it('should be a defined function', function() {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return a boolean when called', function(){
+        expect(typeof isFive()).toBe('boolean');
+    });
+    it('should return true when input is 5', function(){
+        expect(isFive(5)).toBe(true);
+    });
+    it('should return true when input is "5"', function(){
+        expect(isFive("5")).toBe(true);
+    });
+    it('should be false when 4 is passed in', function(){
+        expect(isFive(4)).toBe(false);
     })
 });
