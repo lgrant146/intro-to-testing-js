@@ -25,3 +25,8 @@ function isEven(x) {
 
     }
 }
+
+function isVowel(input){
+    return input == 'A' || input == "E" || input == 'I' || input == 'O' || input == 'U'|| input == 'a' || input == 'e' || input == 'i' || input == 'o' || input == 'u';
+
+}
