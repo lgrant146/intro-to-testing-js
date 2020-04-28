@@ -123,5 +123,25 @@ describe("isVowel", function () {
     it('should return false when isVowel() is executed', function(){
         expect(isVowel()).toBe(false);
     });
+});
+
+describe('add', function (){
+    it('should always be a function', function (){
+        expect(typeof add).toBe('function');
+    });
+    it('should add (2, 3) and return 5', function(){
+        expect(add(2,3)).toBe(5);
+    });
+    it ('should add (-3, -9) and return -12', function(){
+        expect(add(-3, -9)).toBe(-12);
+    });
+    it('should add ("5", 6) and return 11', function (){
+        expect(add("-4", "10")).toBe(6);
+    });
+    it('should add ("banana", "split") and return', function(){
+        expect(add("banana", "spilt")).toBe(NaN);
+    });
+    it()
 
 });
+

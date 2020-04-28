@@ -30,3 +30,8 @@ function isVowel(input){
     return input == 'A' || input == "E" || input == 'I' || input == 'O' || input == 'U'|| input == 'a' || input == 'e' || input == 'i' || input == 'o' || input == 'u';
 
 }
+
+function add(num1, num2){
+    return (parseFloat(num1 )+ parseFloat(num2));
+
+}
